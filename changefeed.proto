@@ -14,7 +14,7 @@
 
 syntax = "proto3";
 package changefeedpb;
-option go_package = "github.com/cockroachdb/changefeedpb/proto;changefeedpb";
+option go_package = "github.com/cockroachdb/changefeedpb;changefeedpb";
 
 import "google/protobuf/timestamp.proto";
 
