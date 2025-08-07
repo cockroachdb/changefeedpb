@@ -9,7 +9,7 @@ If any changes are made to changefeed.proto, it needs to be regenerated using th
 
 1. First make sure you have the protoc-gen-gogoroach plugin installed and available in your PATH.
 2. Then run the following command from the root of the repository:
-
+```
 ERR_DIR=$(go list -m -f '{{.Dir}}' github.com/cockroachdb/errors)/errorspb GOGO_TYPES=$(go list -m -f '{{.Dir}}' github.com/gogo/protobuf)/typesGOGO_DESC=$(go list -m -f '{{.Dir}}' github.com/gogo/protobuf)/protoc-gen-gogo/descriptor
 
 protoc -I . \
@@ -25,7 +25,6 @@ Mgoogle/protobuf/any.proto=github.com/gogo/protobuf/types,\
 Mgoogle/protobuf/descriptor.proto=github.com/gogo/protobuf/protoc-gen-gogo/descriptor,\               
 Mgoogle/protobuf/duration.proto=github.com/gogo/protobuf/types:. \
   changefeed.proto
-
-
+```
 
 
