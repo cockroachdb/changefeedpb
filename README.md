@@ -1,9 +1,6 @@
 # changefeedpb
 
-Protobuf definitions for CockroachDB changefeeds.
-
-This package defines the protocol buffer schemas used to encode changefeed messages for CockroachDB's CDC system.
-
+This repo provides the Protobuf definitions used to encode changefeed messages for CockroachDB’s CDC system.
 
 If any changes are made to changefeed.proto, it needs to be regenerated using the protoc compiler with the gogoroach plugin. To do this follow the steps: 
 
