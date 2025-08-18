@@ -1,6 +1,6 @@
 module github.com/cockroachdb/changefeedpb
 
-go 1.24.5
+go 1.23.7
 
 require (
 	github.com/cockroachdb/errors v1.12.0
